@@ -2,7 +2,7 @@
 {
     --AzulEscuro: #252239;
     --AzulClaro: #608DA1;
-    --AmareloDourado: = #E1B370;
+    --AmareloDourado: #E1B370;
     font-size: 15px;
 }
 body
@@ -10,7 +10,7 @@ body
     margin: 0px;
 }
 /* Header */
-header
+#header
 {
     display: flex;
     justify-content: center;
@@ -67,41 +67,114 @@ header
 /* ---------------------------------------------------- */
 /* Banner */
 
-#banner
+.banner
 {
     width: 100%;
     color: white;
 }
-#imgBanner
+#conteudoBanner
 {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+#opacidadeImgBanner
+{
+    width: 100%;
+    height: 850px;
+    position: absolute;
+    background-color: var(--AzulEscuro);
+    top: 0;
+    opacity: 0.4;
+}
+#imgBanner
+{
+    width: 100%;
 }
 #imgBanner img
 {
     width: 100%;
-    height: 700px;
+    height: 850px;
     object-fit: cover;
     object-position: top;
 }
 #conteudoEscritoBanner
 {
     position: absolute;
-    width: 50%;
+    width: 950px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; 
-}
+    height: 40%;
+    padding-top: 40px; 
+} 
 #descricaoBanner
 {
-    width: 80%;
+    width: 615px;
     font-size: 0.8rem;
+    text-align: center;
+}
+#descricaoBanner h2
+{
+    margin: 0;
+    line-height: 35px;
 }
 #tituloBanner
 {
-    font-size: 2rem;
+    width: 100%;
+    font-size: 2.3rem;
+    text-align: center;
+}
+#tituloBanner h1
+{
+    margin: 0px;
+}
+h1 .nomeDestacado
+{
+    color: var(--AmareloDourado);
+}
+#botaoDiagnostico
+{
+    font-size: 1.2rem;
+    background-color: var(--AzulEscuro);
+    padding: 0px 20px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+/* Etapas */
+h2 .nomeDestacado
+{
+    color: var(--AmareloDourado);
+}
+#divTituloEtapas
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+    
+}
+#tituloEtapas
+{
+    width: 300px;
+    font-size: 1.3rem;
+}
+#tituloEtapas h2
+{
+   margin: 0;
+}
+
+.linha
+{
+    height: 3px;
+    border-radius: 10%;
+    background-color: black;
+    width: 300px;
 }
