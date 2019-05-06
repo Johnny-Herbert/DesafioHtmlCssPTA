@@ -51,7 +51,7 @@ header
 {
     display: flex;
     justify-content: right;
-    width: 20%;
+    width: 260px;
 }
 #menuNav ul
 {
@@ -70,9 +70,38 @@ header
 #banner
 {
     width: 100%;
+    color: white;
+}
+#imgBanner
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #imgBanner img
 {
     width: 100%;
+    height: 700px;
     object-fit: cover;
+    object-position: top;
+}
+#conteudoEscritoBanner
+{
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+#descricaoBanner
+{
+    width: 80%;
+    font-size: 0.8rem;
+}
+#tituloBanner
+{
+    font-size: 2rem;
 }
