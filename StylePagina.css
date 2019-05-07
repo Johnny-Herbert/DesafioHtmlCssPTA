@@ -187,6 +187,7 @@ h2 .nomeDestacado
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 130px 0px;
@@ -198,6 +199,7 @@ h2 .nomeDestacado
     height: 300px;
     border: solid var(--AzulClaro) 1px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -220,8 +222,18 @@ h2 .nomeDestacado
 {
     position: absolute;
     color: var(--AzulEscuro);
+    width: 70%;
+    text-align: right;
 }
 .tituloEtapa h3
 {
     margin: 0px;
+}
+.descricaoEtapa
+{
+    width: 90%;
+    font-size: 0.85rem;
+    line-height: 15px;
+    color: var(--AzulClaro);
+    opacity: 0.6;
 }
