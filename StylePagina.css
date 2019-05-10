@@ -65,6 +65,17 @@ body
     margin: 0px;
     padding: 0px;
 }
+@media(max-width:500px)
+{
+    #conteudoHeader
+    {
+        justify-content: center;
+    }
+    #menuNav
+    {
+        display: none;
+    }
+}
 /* ---------------------------------------------------- */
 /* Banner */
 
