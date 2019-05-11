@@ -10,6 +10,10 @@ body
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
+ul li a
+{
+    padding: 10px;
+}
 /* Header */
 #header
 {
@@ -66,6 +70,12 @@ body
     margin: 0px;
     padding: 0px;
 }
+a
+{
+    text-decoration: none;
+    color: white;
+}
+/* Responsividade header */
 @media(max-width:500px)
 {
     #header
@@ -178,15 +188,7 @@ h1 .nomeDestacado
     margin: 15px 10px;
 }
 /* Responsividade Banner */
-@media(max-width : 580px)
-{
-    #conteudoEscritoBanner
-    {
-        height: 45%;
-    }
-}
-
-@media(max-width : 550px)
+@media(max-width: 600px)
 {
     #tituloBanner
     {
@@ -195,12 +197,14 @@ h1 .nomeDestacado
     h1 .nomeDestacado
     {
         font-size: 4.2rem;
-    }
+    }  
+}
+@media(max-width : 580px)
+{
     #conteudoEscritoBanner
     {
         height: 45%;
     }
-    
 }
 @media(max-width : 465px)
 {
@@ -209,21 +213,21 @@ h1 .nomeDestacado
         height: 50%;
     }
 }
-@media(max-width : 410px)
+@media(max-width : 440px)
 {
     #tituloBanner
     {
         font-size: 1.3rem;
     }
 }
-@media(max-width : 325px)
+@media(max-width : 388px)
 {
     #conteudoEscritoBanner
     {
         height: 55%;
     }
 }
-
+/* ---------------------------------------------------- */
 /* Etapas */
 h2 .nomeDestacado
 {
@@ -247,8 +251,12 @@ h2 .nomeDestacado
 #tituloEtapas h2
 {
    margin: 0;
+   font-weight: 300;
 }
-
+h2 .nomeDestacado
+{
+    font-weight: bold;
+}
 .linha
 {
     height: 3px;
@@ -311,6 +319,7 @@ h2 .nomeDestacado
     color: var(--AzulClaro);
     opacity: 0.6;
 }
+/* ---------------------------------------------------- */
 /* Footer */
 #footer
 {
@@ -340,11 +349,20 @@ h2 .nomeDestacado
 #navRedesSociais
 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 200px;
 }
-
+#navRedesSociais ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+/* ---------------------------------------------------- */
+/* Responsividade Footer */
 @media(max-width: 650px)
 {
     #footer
