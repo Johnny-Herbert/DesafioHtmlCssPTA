@@ -188,6 +188,18 @@ h1 .nomeDestacado
     margin: 15px 10px;
 }
 /* Responsividade Banner */
+@media(max-width: 1000px)
+{
+    #imgBanner img
+    {
+        object-position: 65%;
+    }
+    #conteudoEscritoBanner
+    {
+        padding-top: 0px;
+        padding-bottom: 80px;
+    }
+}
 @media(max-width: 600px)
 {
     #tituloBanner
@@ -211,6 +223,14 @@ h1 .nomeDestacado
     #conteudoEscritoBanner
     {
         height: 50%;
+    }
+    #imgBanner img
+    {
+        height: 100vh;
+    }
+    #opacidadeImgBanner
+    {
+        height: 100vh;
     }
 }
 @media(max-width : 440px)
