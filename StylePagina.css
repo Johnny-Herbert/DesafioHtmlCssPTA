@@ -224,14 +224,18 @@ h1 .nomeDestacado
     {
         height: 50%;
     }
-    #imgBanner img
+    @media(max-height: 1000px)
     {
-        height: 100vh;
+        #imgBanner img
+        {
+            height: 100vh;
+        }
+        #opacidadeImgBanner
+        {
+            height: 100vh;
+        }
     }
-    #opacidadeImgBanner
-    {
-        height: 100vh;
-    }
+    
 }
 @media(max-width : 440px)
 {
@@ -304,6 +308,8 @@ h2 .nomeDestacado
     align-items: center;
     justify-content: center;
     margin: 20px;
+    border-radius: 5px;
+    box-shadow: -1px -1px 5px rgb(226, 224, 224);
 }
 .tituloNumeroEtapa
 {
